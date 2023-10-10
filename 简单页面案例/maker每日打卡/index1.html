@@ -1,0 +1,1371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, use-scalable=no,initial-scale=1.0,maximun-scale=1.0,minimum-scale=1.0">
+    <!--[if lt IE 9]>
+      <script src="https://fastly.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+      <script src="https://fastly.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+    <![endif]-->
+    <title>每日打卡</title>
+    <!-- <link rel="stylesheet" href="bootstap/css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/index.css">
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link rel="stylesheet" href="css/fulu.css">
+    <style>
+        @font-face {
+            font-family: 'icomoon';
+            src: url('fonts/icomoon.eot?bux3ui');
+            src: url('fonts/icomoon.eot?bux3ui#iefix') format('embedded-opentype'),
+                url('fonts/icomoon.ttf?bux3ui') format('truetype'),
+                url('fonts/icomoon.woff?bux3ui') format('woff'),
+                url('fonts/icomoon.svg?bux3ui#icomoon') format('svg');
+            font-weight: normal;
+            font-style: normal;
+            font-display: block;
+        }
+
+
+
+        /* 必须在当前html中style里引用此 */
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">打卡系统</div>
+        <nav class="nav">
+            <div class="zhaopai">
+                <img src="images/icon3.png" alt="maker-lot">
+            </div>
+            <div class="shijian">
+                <select name="year" id="">
+                    <option value="">2020年</option>
+                    <option value="">2021年</option>
+                    <option value="" selected="selected">2022年</option>
+                    <option value="">2023年</option>
+                    <option value="">2024年</option>
+                </select>
+                <select name="yue" id="">
+                    <option value="">1月</option>
+                    <option value="">2月</option>
+                    <option value="">3月</option>
+                    <option value="">4月</option>
+                    <option value="" selected="selected">5月</option>
+                    <option value="">6月</option>
+                    <option value="">7月</option>
+                    <option value="">8月</option>
+                    <option value="">9月</option>
+                    <option value="">10月</option>
+                    <option value="">11月</option>
+                    <option value="">12月</option>
+                </select>
+                <select name="data" id="">
+                    <option value="">1日</option>
+                    <option value="">2日</option>
+                    <option value="">3日</option>
+                    <option value="">4日</option>
+                    <option value="">5日</option>
+                    <option value="">6日</option>
+                    <option value="">7日</option>
+                    <option value="">8日</option>
+                    <option value="">9日</option>
+                    <option value="">10日</option>
+                </select>
+                <div class="search">
+                    <button autofocus onclick="alert('Hello world!')"></button>
+                    <input type="text" value="查找成员">
+
+                    <button autofocus onclick="alert('正在跳转界面')"></button>
+
+                    <button autofocus onclick="alert('Hello world!')"> <a href="index.html"></a></button>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <aside>
+                <a href="#">全部</a>
+                <a href="#">前端组</a>
+                <a href="#">后端组</a>
+                <a href="#">硬件组</a>
+                <a href="#">策划运营组</a>
+                <a href="#">原型设计组</a>
+            </aside>
+            <article>
+                <ul>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+                    <li>
+                        <!-- 左边 -->
+                        <div class="left">
+                            <div class="touxiang">头像</div>
+                            <div class="name">
+                                <h5>用户名称</h5>
+                                <i>后端组</i>
+                            </div>
+                        </div>
+                        <!-- 右边 -->
+                        <div class="right">
+                            最近&nbsp;05月06日&nbsp;16:30&nbsp;&nbsp;打卡21次
+
+                            <dialog>
+                                <div class="kuangjia">
+                                    <div class="header1">
+                                        <div class="left1">
+                                            <div class="tou">头像</div>
+                                            <div class="ci">打卡次数：2</div>
+                                        </div>
+                                        <div class="right1">
+                                            <!-- <div class="cha">
+                                                <a href="index.html"></a>
+                                            </div> -->
+                                            <ul>
+                                                <li>
+
+                                                    <h3>姓名:</h3>
+                                                    <span>&nbsp;&nbsp;康晴</span>
+                                                    <dialog>
+                                                        <ul>
+                                                            <li><input type="text"></li>
+                                                        </ul>
+                                                        <button id="close">
+                                                            确定
+                                                        </button>
+                                                    </dialog>
+
+                                                    <button class="open">编辑</button>
+
+
+
+
+                                                </li>
+                                                <li>
+                                                    <h3>性别:</h3>
+                                                    <span>&nbsp;&nbsp;女</span>
+                                                </li>
+                                                <li>
+                                                    <h3>生日:</h3>
+                                                    <span>&nbsp;&nbsp;2022年12月01日</span>
+                                                </li>
+                                                <li>
+                                                    <h3>学号:</h3>
+                                                    <span>&nbsp;&nbsp;2105050203</span>
+                                                </li>
+                                                <li>
+                                                    <h3>组别:</h3>
+                                                    <span>&nbsp;&nbsp;原型设计组</span>
+                                                </li>
+                                                <li>
+                                                    <h3>年级:</h3>
+                                                    <span>&nbsp;&nbsp;2021级</span>
+                                                </li>
+                                                <li>
+                                                    <h3>专业:</h3>
+                                                    <span>&nbsp;&nbsp;数据科学与大数据技术专业</span>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="footer1">
+                                        <div class="fl1">
+                                            <button class="close">
+                                                确定
+                                            </button>
+                                        </div>
+                                        <div class="fr1">
+                                            <a href="index1.html">取消</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </dialog>
+                            <button class="open">修改</button>
+
+                            <div class="shanchu">删除</div>
+                        </div>
+                    </li>
+
+                </ul>
+            </article>
+        </section>
+    </div>
+    <script src="flexible.js"></script>
+    <script src="wo.js"></script>
+
+</body>
+
+</html>

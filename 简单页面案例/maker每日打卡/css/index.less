@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    font: normal 15px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei";
+    color: #000;
+    background-color: #f2f2f2;
+    -webkit-tap-highlight-color: transparent;
+}
+
+
+@media screen and (min-width: 750px) {
+    html {
+        font-size: 37.5px !important;
+    }
+}
+
+@media screen and (min-width: 650px) {
+    html {
+        font-size: 32.5px !important;
+    }
+}
+
+@media screen and (min-width: 550px) {
+    html {
+        font-size: 27.5px !important;
+    }
+}
+
+@media screen and (min-width: 450px) {
+    html {
+        font-size: 22.5px !important;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    html {
+        font-size: 42.5px !important;
+    }
+}
+
+@media screen and (min-width: 950px) {
+    html {
+        font-size: 47.5px !important;
+    }
+}
+
+@media screen and (min-width: 1050px) {
+    html {
+        font-size: 52.5px !important;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    html {
+        font-size: 60px !important;
+    }
+}
+
+
+
+
+.header {
+    width: 100%;
+    height: 1.3333rem;
+    background-color: rgba(0, 60, 255, 0.841);
+    text-align: center;
+    line-height: 1.3333rem;
+    font-size: .5333rem;
+    font-weight: 400;
+    color: #f2f2f2;
+    margin-bottom: .0533rem;
+}
+
+.nav {
+    border-bottom: 1px solid #000;
+    height: 1.3333rem;
+    // margin-bottom: .0533rem;
+    display: flex;
+    justify-content: space-between;
+
+    .zhaopai {
+        width: 30%;
+
+        img {
+            vertical-align: middle;
+            height: 1.3333rem;
+            width: 100%;
+        }
+    }
+
+    .shijian {
+        // background-color: purple;
+
+        // transform: translateX(4rem);
+        display: flex;
+
+        select {
+            font-size: .3rem;
+            outline: none;
+            margin-top: .2rem;
+            margin-right: .3rem;
+            height: .8rem;
+            border-radius: .1333rem;
+        }
+
+        .search {
+
+            // display: flex;
+            position: relative;
+            // background-color: pink;
+
+            input {
+                // margin-left: .0533rem;
+                outline: none;
+                margin-top: .2rem;
+                width: 3.5rem;
+                border: .0267rem solid #ccc;
+                height: .8rem;
+                background-color: #f2f2f2;
+                border-radius: .35rem;
+                color: #ccc;
+                text-align: center;
+                font-size: .3733rem;
+                line-height: .8rem;
+            }
+
+            button {
+                outline: none;
+                border: 0;
+                margin-left: .2667rem;
+                margin-top: .2rem;
+                // flex: 1;
+                height: 0.8rem;
+                font-family: 'icomoon';
+
+                &:nth-child(1) {
+                    position: absolute;
+                    z-index: 999;
+                    top: .1033rem;
+                }
+
+                // &:nth-child(2) {
+                //     right: 3rem;
+                // }
+            }
+
+        }
+
+
+
+    }
+}
+
+
+section {
+    display: flex;
+
+    aside {
+        display: flex;
+        flex-wrap: wrap;
+        //    flex-direction: column;
+        //    align-items: center;
+
+        height: 20rem;
+        background-color: rgb(0, 94, 255);
+        width: 30%;
+        border-right: .0267rem solid rgba(0, 0, 0, 0.736);
+
+        a {
+            box-sizing: border-box;
+            width: 100%;
+            text-align: center;
+            border-bottom: .0267rem solid #000;
+            line-height: 3.3333rem;
+            font-size: .6667rem;
+
+            &:hover {
+                background-color: rgb(0, 157, 255);
+            }
+        }
+    }
+
+    article {
+        width: 70%;
+        font-size: .3rem;
+
+        ul {
+            height: 20rem;
+            width: 100%;
+
+
+            li {
+                width: 100%;
+                height: 2.6667rem;
+                border-bottom: .0267rem solid #000;
+                display: flex;
+
+                .left {
+                    width: 50%;
+                    display: flex;
+
+
+                    .touxiang {
+                        text-align: center;
+                        line-height: 2.6667rem;
+                        width: 2.6667rem;
+                        height: 2.6667rem;
+                        border: .0267rem solid #000;
+                        border-radius: 2.6667rem;
+                    }
+
+                    .name {
+                        margin-left: .2667rem;
+                        height: 2.6667rem;
+                        right: 8rem;
+
+                        h5 {
+
+                            font-size: medium;
+                            margin-top: .4rem;
+                        }
+
+                        i {
+                            display: inline-block;
+                            // background-color: pink;
+                            margin-top: .35rem;
+                            font-style: normal;
+                        }
+                    }
+                }
+
+                .right {
+                    display: flex;
+
+                    .open {
+                        margin: auto;
+                        line-height: .8rem;
+                        color: #f2f2f2;
+                        flex: 1;
+                        height: .8rem;
+                        font-size: .3rem;
+                        margin-left: .1333rem;
+                        background-color: blue;
+                        border-radius: .08rem;
+                    }
+
+                    .cha1 {
+                        font-family: 'icomoon';
+                        margin-left: .3667rem;
+                        color: red;
+                        font-size: .5rem;
+                    }
+
+                    .shanchu {
+                        margin: auto;
+                        line-height: .8rem;
+                        color: #f2f2f2;
+                        flex: 1;
+                        height: .8rem;
+
+                        margin-left: .1333rem;
+                        background-color: red;
+                        border-radius: .08rem;
+                    }
+
+                    height: 2.6667rem;
+                    flex: 1;
+                    text-align: center;
+                    line-height: 2.6667rem;
+                }
+            }
+
+        }
+    }
+
+}

@@ -1,0 +1,371 @@
+.demo {
+    /* 固定在屏幕的最上方和最左方 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    /* 确保整个div在最下面 */
+    z-index: -10;
+    zoom: 1;
+    background-image: url(../img/bg1.png);
+    background-color: #fff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}
+
+nav {
+
+    height: 130px;
+    width: 100%;
+    background-color: #d3907d;
+    color: white;
+    position: fixed;
+    z-index: 9999;
+
+}
+
+body #player {
+    position: relative;
+    top: -160px;
+    left: 580px;
+    width: 300px;
+}
+
+nav .thank {
+    font-weight: 600;
+    font-family: '宋体';
+    margin-top: 20px;
+    margin-left: 100px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 40px;
+    /* background-color: red; */
+}
+
+nav ul {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    /* background-color: purple; */
+    float: left;
+
+}
+
+nav ul li a {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+
+
+nav ul li:nth-child(1) a {
+    width: 128px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 30px;
+    background-color: #4a756e;
+}
+
+article {
+    width: 1000px;
+    height: 550px;
+    margin-top: 200px;
+    float: left;
+    position: relative;
+    left: 20%;
+    display: flex;
+    justify-content: center;
+}
+
+article .wentu {
+    height: 550px;
+    float: left;
+    left: 15px;
+    width: 340px;
+    margin-left: 20px;
+    position: relative;
+    /* box-shadow: 3px 3px 10px #666; */
+    overflow: hidden;
+}
+
+article .wentu:nth-child(1) {
+    left: 0;
+    margin-left: 0;
+}
+
+article .wentu img {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    z-index: 999;
+}
+
+article .wentu .wen {
+    top: -175px;
+    height: 200px;
+    width: 340px;
+    background-color: white;
+    position: absolute;
+
+    filter: Alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;
+    padding: 20px;
+    -webkit-transition: left 3s ease;
+}
+
+article .wentu .wen h4 {
+    height: 30px;
+    color: black;
+    font-size: 16px;
+    text-align: center;
+    position: relative;
+    top: 200px;
+    -webkit-transition: left 3s ease;
+}
+
+article .wentu .wen p {
+    line-height: 25px;
+    font-size: 14px;
+    color: gray;
+    position: relative;
+    top: 200px;
+    -webkit-transition: left 3s ease;
+}
+
+article .wentu:hover .wen {
+    top: 135px;
+    background-color: white;
+}
+
+article .wentu:hover img {
+    top: -40px;
+    right: -20px;
+}
+
+article .wentu:hover {
+    background-color: white;
+}
+
+article .wentu:hover .wen h4 {
+    top: 135px;
+
+}
+
+article .wentu:hover .wen p {
+    top: 135px;
+
+}
+
+.container {
+    width: 1200px;
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    border-radius: 10px;
+    margin-left: 175px;
+}
+
+.card {
+    position: relative;
+    width: 500px;
+    height: 330px;
+    background: #c0e1a1;
+    border-radius: 3px;
+    cursor: pointer;
+    box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.8);
+    transition: 0.3s all;
+    overflow: hidden;
+    margin: 50px;
+    border: 3px #FFFFFF solid;
+
+}
+
+.card:hover {
+    box-shadow: 4px 4px 10px rgba(255, 255, 255, 0.5);
+}
+
+.img {
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+}
+
+.img img {
+    width: 100%;
+    height: 100%;
+    transition: all 0.5s;
+}
+
+.card:hover .img img {
+    transform: scale(1.2);
+    filter: blur(1px);
+}
+
+.container .card .content {
+    position: absolute;
+    bottom: -200px;
+    width: 100%;
+    transition: 0.5s;
+    background: #c0e1a1;
+    height: 240px;
+    left: 0px;
+}
+
+.card:hover .content {
+    bottom: 0px;
+}
+
+.content h2 {
+    color: #FFF;
+    text-align: center;
+    line-height: 45px;
+}
+
+.content p {
+    padding: 0 30px;
+    font-family: "宋体";
+    font-size: 14px;
+    color: #FFF;
+    margin: 10px;
+    font-weight: 700;
+}
+
+
+
+.container1 {
+    width: 100%;
+    /* margin-top: 1000px; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    transition: 0.5s;
+    height: 1000px;
+    /*height:1100px;*/
+}
+
+.container1 .card1 {
+    position: relative;
+    width: 1200px;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    margin: 60px 35px 60px 35px;
+}
+
+p.line_c {
+    background-color: white;
+    height: 3px;
+    margin: 0 25px;
+    position: relative;
+    top: -5%;
+    width: 90%;
+}
+
+/* .container1:hover .card1 {
+    filter: blur(5px);
+    transform: scale(.7);
+} */
+
+/* container .card:hover {
+    filter: blur(0px);
+    transform: scale(1);
+} */
+
+.container1 .card1:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #509abe;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+/* .container1 .card1:hover:before {
+    background: #FFF;
+    transform: scale(1.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .2);
+} */
+.container1 .card1 img {
+    z-index: 999;
+}
+
+.container1 .card1 .content {
+    text-align: 0;
+    z-index: 2;
+    padding: 0 20px;
+    transition: 0.5s;
+
+}
+
+/* .container1 .card1:hover .content {
+    color: #497271;
+} */
+
+.container1 .card1 .text_communist_c {
+    display: inline-block;
+    color: white;
+    font-size: 40px;
+    margin-top: -25px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+
+
+/* 
+.container1 .card1:hover .text_communist_c {
+    color: #000;
+} */
+
+.container1 .card1 .text_content_c {
+    color: #FFF;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}
+
+/* .container1 .card1:hover .text_content_c {
+    color: #000;
+} */
+
+.text_communist_c {
+    color: white;
+    font-size: 40px;
+    margin-top: -20px;
+    margin-left: 5px;
+    position: relative;
+    top: -5px;
+    z-index: 99;
+}
+
+.text_content_c {
+    color: #FFF;
+    font-size: 5px;
+    line-height: 2;
+    z-index: 99;
+}

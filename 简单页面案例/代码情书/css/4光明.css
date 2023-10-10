@@ -1,0 +1,137 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+}
+
+nav {
+
+    height: 130px;
+    width: 100%;
+    background-color: #d38d7c;
+    color: white;
+    /* position: fixed;
+    z-index: 999; */
+}
+
+nav .thank {
+    margin-left: 100px;
+    margin-top: 20px;
+    float: left;
+    height: 100%;
+    text-align: center;
+    line-height: 100%;
+    font-size: 45px;
+    /* background-color: red; */
+}
+
+nav ul {
+    float: right;
+    margin-top: 40px;
+    margin-right: 20px;
+}
+
+nav ul li {
+    /* background-color: purple; */
+    float: left;
+
+}
+
+nav ul li a {
+    width: 130px;
+    height: 50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+nav ul li:nth-child(4) a {
+    width: 128px;
+    height: 48px;
+    line-height: 48px;
+    border-radius: 30px;
+    background-color: #3e605b;
+}
+
+body article {
+    margin-top: -10px;
+}
+
+.swiper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 0;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+.swiper .swiper-wrapper .swiper-slide a {
+    width: 1200px;
+    height: 630px;
+    position: relative;
+    z-index: 999;
+}
+
+.swiper-slide p {
+    position: absolute;
+    top: 30px;
+    z-index: 9999;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.demo {
+    /* 固定在屏幕的最上方和最左方 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    min-width: 1000px;
+    /* 确保整个div在最下面 */
+    z-index: -10;
+    zoom: 1;
+    background-image: url(../img/bg1.png);
+    background-color: #fff;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-position: center 0;
+}

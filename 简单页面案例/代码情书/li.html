@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CSS实现鼠标滑过文字时显示隐藏的图片</title>
+    <style>
+        /*清除浏览器自带默认样式*/
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        /*设置容器盒子宽高及内边距*/
+        .text-hover {
+            width: 40rem;
+            height: 20rem;
+            padding: 2rem 10rem;
+        }
+
+        /*设置图片自适应及不显示的样式*/
+        .img-hover {
+            width: 100%;
+            height: aotu;
+            padding: 2rem 0;
+            display: none;
+        }
+
+        /*设置h2文字鼠标滑过的样式*/
+        h2:hover {
+            color: red;
+        }
+
+        /*设置鼠标滑过h2标签的文字时显示图片*/
+        h2:hover+.img-hover {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="text-hover">
+        <h2>慢慢看漫画</h2>
+        <img src="img/3.jpg" class="img-hover" alt="">
+    </div>
+</body>
+
+</html>
