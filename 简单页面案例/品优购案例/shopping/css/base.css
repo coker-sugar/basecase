@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+.w {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?7kkyc2');
+    src: url('../fonts/icomoon.eot?7kkyc2#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?7kkyc2') format('truetype'),
+        url('../fonts/icomoon.woff?7kkyc2') format('woff'),
+        url('../fonts/icomoon.svg?7kkyc2#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+.font-common {
+    font-family: 'icomoon';
+}
+
+a {
+    text-decoration: none;
+    color: #666;
+}
+
+a:hover {
+    color: #C81623;
+}
+
+.bk {
+    outline: none;
+}
+
+img {
+    vertical-align: middle;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    visibility: hidden;
+    clear: both;
+}
+
+em {
+    font-style: normal;
+}
+
+button,
+input {
+    font-family: Microsoft Yahei, Heiti SC, tahoma, arial, "\5888\4F53";
+    border: 0;
+    outline: none;
+}

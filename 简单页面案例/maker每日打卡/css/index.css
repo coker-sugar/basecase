@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  max-width: 1200px;
+  min-width: 320px;
+  margin: 0 auto;
+  font: normal 15px/1.5 Tahoma, "Lucida Grande", Verdana, "Microsoft Yahei";
+  color: #000;
+  background-color: #f2f2f2;
+  -webkit-tap-highlight-color: transparent;
+}
+@media screen and (min-width: 750px) {
+  html {
+    font-size: 37.5px !important;
+  }
+}
+@media screen and (min-width: 650px) {
+  html {
+    font-size: 32.5px !important;
+  }
+}
+@media screen and (min-width: 550px) {
+  html {
+    font-size: 27.5px !important;
+  }
+}
+@media screen and (min-width: 450px) {
+  html {
+    font-size: 22.5px !important;
+  }
+}
+@media screen and (min-width: 850px) {
+  html {
+    font-size: 42.5px !important;
+  }
+}
+@media screen and (min-width: 950px) {
+  html {
+    font-size: 47.5px !important;
+  }
+}
+@media screen and (min-width: 1050px) {
+  html {
+    font-size: 52.5px !important;
+  }
+}
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 60px !important;
+  }
+}
+.header {
+  width: 100%;
+  height: 1.3333rem;
+  background-color: rgba(0, 60, 255, 0.841);
+  text-align: center;
+  line-height: 1.3333rem;
+  font-size: 0.5333rem;
+  font-weight: 400;
+  color: #f2f2f2;
+  margin-bottom: 0.0533rem;
+}
+.nav {
+  border-bottom: 1px solid #000;
+  height: 1.3333rem;
+  display: flex;
+  justify-content: space-between;
+}
+.nav .zhaopai {
+  width: 30%;
+}
+.nav .zhaopai img {
+  vertical-align: middle;
+  height: 1.3333rem;
+  width: 100%;
+}
+.nav .shijian {
+  display: flex;
+}
+.nav .shijian select {
+  font-size: 0.3rem;
+  outline: none;
+  margin-top: 0.2rem;
+  margin-right: 0.3rem;
+  height: 0.8rem;
+  border-radius: 0.1333rem;
+}
+.nav .shijian .search {
+  position: relative;
+}
+.nav .shijian .search input {
+  outline: none;
+  margin-top: 0.2rem;
+  width: 3.5rem;
+  border: 0.0267rem solid #ccc;
+  height: 0.8rem;
+  background-color: #f2f2f2;
+  border-radius: 0.35rem;
+  color: #ccc;
+  text-align: center;
+  font-size: 0.3733rem;
+  line-height: 0.8rem;
+}
+.nav .shijian .search button {
+  outline: none;
+  border: 0;
+  margin-left: 0.2667rem;
+  margin-top: 0.2rem;
+  height: 0.8rem;
+  font-family: 'icomoon';
+}
+.nav .shijian .search button:nth-child(1) {
+  position: absolute;
+  z-index: 999;
+  top: 0.1033rem;
+}
+section {
+  display: flex;
+}
+section aside {
+  display: flex;
+  flex-wrap: wrap;
+  height: 20rem;
+  background-color: #005eff;
+  width: 30%;
+  border-right: 0.0267rem solid rgba(0, 0, 0, 0.736);
+}
+section aside a {
+  box-sizing: border-box;
+  width: 100%;
+  text-align: center;
+  border-bottom: 0.0267rem solid #000;
+  line-height: 3.3333rem;
+  font-size: 0.6667rem;
+}
+section aside a:hover {
+  background-color: #009dff;
+}
+section article {
+  width: 70%;
+  font-size: 0.3rem;
+}
+section article ul {
+  height: 20rem;
+  width: 100%;
+}
+section article ul li {
+  width: 100%;
+  height: 2.6667rem;
+  border-bottom: 0.0267rem solid #000;
+  display: flex;
+}
+section article ul li .left {
+  width: 50%;
+  display: flex;
+}
+section article ul li .left .touxiang {
+  text-align: center;
+  line-height: 2.6667rem;
+  width: 2.6667rem;
+  height: 2.6667rem;
+  border: 0.0267rem solid #000;
+  border-radius: 2.6667rem;
+}
+section article ul li .left .name {
+  margin-left: 0.2667rem;
+  height: 2.6667rem;
+  right: 8rem;
+}
+section article ul li .left .name h5 {
+  font-size: medium;
+  margin-top: 0.4rem;
+}
+section article ul li .left .name i {
+  display: inline-block;
+  margin-top: 0.35rem;
+  font-style: normal;
+}
+section article ul li .right {
+  display: flex;
+  height: 2.6667rem;
+  flex: 1;
+  text-align: center;
+  line-height: 2.6667rem;
+}
+section article ul li .right .open {
+  margin: auto;
+  line-height: 0.8rem;
+  color: #f2f2f2;
+  flex: 1;
+  height: 0.8rem;
+  font-size: 0.3rem;
+  margin-left: 0.1333rem;
+  background-color: blue;
+  border-radius: 0.08rem;
+}
+section article ul li .right .cha1 {
+  font-family: 'icomoon';
+  margin-left: 0.3667rem;
+  color: red;
+  font-size: 0.5rem;
+}
+section article ul li .right .shanchu {
+  margin: auto;
+  line-height: 0.8rem;
+  color: #f2f2f2;
+  flex: 1;
+  height: 0.8rem;
+  margin-left: 0.1333rem;
+  background-color: red;
+  border-radius: 0.08rem;
+}
