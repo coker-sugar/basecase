@@ -1,0 +1,90 @@
+{
+  "pages": [
+    "pages/tabbar/index/index",
+    "pages/tabbar/find/find",
+    "pages/tabbar/server/server",
+    "pages/tabbar/friend/friend",
+    "pages/tabbar/mine/mine"
+  ],
+  "subPackages": [
+    {
+      "root": "pagesFind",
+      "pages": [
+        "pages/find"
+      ]
+    },
+    {
+      "root": "pagesFriend",
+      "pages": [
+        "pages/chat"
+      ]
+    },
+    {
+      "root": "pagesMine",
+      "pages": [
+        "pages/dialog",
+        "pages/dialog/heathy",
+        "pages/dialog/news/news",
+        "pages/dialog/news/text-one",
+        "pages/dialog/news/text-three"
+      ]
+    },
+    {
+      "root": "pagesMinebottom",
+      "pages": [
+        "pages/bottom/collection",
+        "pages/bottom/collection-text",
+        "pages/bottom/medal",
+        "pages/bottom/report",
+        "pages/bottom/pattern",
+        "pages/bottom/setting",
+        "pages/bottom/fallback"
+      ]
+    }
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "座上友",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#ffffff",
+    "enablePullDownRefresh": false
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#ff8d1a",
+    "list": [
+      {
+        "pagePath": "pages/tabbar/find/find",
+        "text": "发现",
+        "iconPath": "static/find-off.png",
+        "selectedIconPath": "static/find-on.png"
+      },
+      {
+        "pagePath": "pages/tabbar/server/server",
+        "text": "服务",
+        "iconPath": "static/server-off.png",
+        "selectedIconPath": "static/server-on.png"
+      },
+      {
+        "pagePath": "pages/tabbar/index/index",
+        "text": "首页",
+        "iconPath": "static/index-off.png",
+        "selectedIconPath": "static/index-on.png"
+      },
+      {
+        "pagePath": "pages/tabbar/friend/friend",
+        "text": "好友",
+        "iconPath": "static/friend-off.png",
+        "selectedIconPath": "static/friend-on.png"
+      },
+      {
+        "pagePath": "pages/tabbar/mine/mine",
+        "text": "个人",
+        "iconPath": "static/mine-off.png",
+        "selectedIconPath": "static/mine-on.png"
+      }
+    ]
+  },
+  "lazyCodeLoading": "requiredComponents",
+  "usingComponents": {}
+}

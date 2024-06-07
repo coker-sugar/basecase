@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "好友",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "goodfriends": "../../../components/goodfriend/goodfriend",
+    "concern": "../../../components/goodfriend/concern",
+    "uni-segmented-control": "../../../uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control"
+  }
+}

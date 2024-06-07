@@ -1,0 +1,53 @@
+/* 水平间距 */
+/* 水平间距 */
+.outside {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.demo-uni-row {
+  margin-bottom: 10rpx;
+  margin-top: 10rpx;
+  /* QQ、字节小程序文档写有 :host，但实测不生效 */
+  /* 百度小程序没有 :host，需要设置block */
+}
+
+/* 支付宝小程序没有 demo-uni-row 层级 */
+/* 微信小程序使用了虚拟化节点，没有 demo-uni-row 层级 */
+.uni-row {
+  width: 100vw;
+}
+.demo-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 97vw;
+}
+.demo-add .demo-uni-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 160rpx;
+  border-bottom: 1px solid #ccc;
+}
+.demo-add .demo-uni-col .avater {
+  width: 120rpx;
+  height: 120rpx;
+  margin: 0 auto;
+}
+.demo-add .demo-uni-col h1 {
+  font-size: 33rpx;
+}
+.demo-add .demo-uni-col .friend-text {
+  font-size: 22rpx;
+}
+.demo-add .demo-uni-col .dialog {
+  width: 60rpx;
+  height: 60rpx;
+}
+.bottom-text {
+  padding-top: 20rpx;
+  font-size: 16rpx;
+  color: #808080;
+}

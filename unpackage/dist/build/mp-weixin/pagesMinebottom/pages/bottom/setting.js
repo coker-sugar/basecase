@@ -1,0 +1,1 @@
+"use strict";const e=require("../../../common/assets.js"),r={data(){}};const s=require("../../../common/vendor.js")._export_sfc(r,[["render",function(r,s,t,o,n,c){return{a:e._imports_0}}]]);wx.createPage(s);

@@ -1,0 +1,89 @@
+/* 水平间距 */
+/* 水平间距 */
+.outside {
+  align-items: flex-start;
+}
+.demo-uni-row {
+  margin-bottom: 10rpx;
+  /* QQ、字节小程序文档写有 :host，但实测不生效 */
+  /* 百度小程序没有 :host，需要设置block */
+}
+
+/* 支付宝小程序没有 demo-uni-row 层级 */
+/* 微信小程序使用了虚拟化节点，没有 demo-uni-row 层级 */
+.uni-row {
+  width: 100vw;
+}
+.demo-add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  box-sizing: border-box;
+  padding-left: 30rpx;
+  margin-top: 20rpx;
+  margin-bottom: 30px;
+}
+.demo-add .demo-uni-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 280rpx;
+}
+.demo-add .demo-uni-col .avater {
+  width: 200rpx;
+  height: 200rpx;
+  margin: 0 auto;
+}
+.demo-add .demo-uni-col h1 {
+  font-size: 33rpx;
+  font-weight: 900;
+}
+.demo-add .demo-uni-col .friend-text {
+  font-size: 25rpx;
+}
+.demo-add .demo-uni-col .top-right {
+  position: relative;
+  top: -65rpx;
+  left: -80rpx;
+  width: 50rpx;
+  height: 50rpx;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.demo-add .demo-uni-col .top-right .dialog {
+  width: 45rpx;
+  height: 45rpx;
+}
+.bottom {
+  display: flex;
+  width: 50vw;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding-left: 60rpx;
+}
+.bottom .bottom-item {
+  width: 90vw;
+  height: 120rpx;
+  line-height: 120rpx;
+  display: flex;
+  justify-content: flex-start;
+}
+.bottom .bottom-item .bottom-left {
+  width: 15vw;
+  height: 60rpx;
+}
+.bottom .bottom-item .bottom-left .ig {
+  width: 65rpx;
+  height: 70rpx;
+}
+.bottom .bottom-item .bottom-right {
+  width: 35vw;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 35rpx;
+}

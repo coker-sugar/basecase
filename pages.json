@@ -1,0 +1,203 @@
+{
+	"pages": [
+		{
+            "path" : "pages/tabbar/index/index",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "首页",
+				// "navigationBarBackgroundColor": "#ff8d1a",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path": "pages/tabbar/find/find",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "发现",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path" : "pages/tabbar/server/server",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "服务",
+                "enablePullDownRefresh": false
+            }
+            
+        },{
+            "path": "pages/tabbar/friend/friend",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "好友",
+                "enablePullDownRefresh": false
+            }
+            
+        },
+		{
+            "path": "pages/tabbar/mine/mine",
+            "style" :                                                                                    
+            {
+				"navigationBarTitleText": "个人",
+                "enablePullDownRefresh": false
+            }
+        }
+],
+"subPackages": [
+	{
+		"root": "pagesFind",
+		"pages": [
+			{
+				"path": "pages/find",
+				"style": {
+					"navigationBarTitleText": "发现"
+				}
+			}
+		]
+	},
+	{
+		"root": "pagesFriend",
+		"pages": [
+			{
+				"path": "pages/chat",
+				"style": {
+					"navigationBarTitleText": "聊天"
+				}
+			}
+		]
+	},
+	{
+		"root": "pagesMine",
+		"pages": [
+			{
+				"path": "pages/dialog",
+				"style": {
+					"navigationBarTitleText": "消息"
+				}
+			},
+			{
+				"path": "pages/dialog/heathy",
+				"style": {
+					"navigationBarTitleText": "健康小贴士"
+				}
+			},
+			{
+				"path": "pages/dialog/news/news",
+				"style": {
+					"navigationBarTitleText": "新闻咨询"
+				}
+			},
+			{
+				"path": "pages/dialog/news/text-one",
+				"style": {
+					"navigationBarTitleText": "第一章"
+				}
+			},
+			{
+				"path": "pages/dialog/news/text-three",
+				"style": {
+					"navigationBarTitleText": "第三章"
+				}
+			}
+		]
+	},
+	{
+		"root": "pagesMinebottom",
+		"pages": [
+			{
+				"path": "pages/bottom/collection",
+				"style": {
+					"navigationBarTitleText": "收藏"
+				}
+			},
+			{
+				"path": "pages/bottom/collection-text",
+				"style": {
+					"navigationBarTitleText": "收藏内容"
+				}
+			},
+			{
+				"path": "pages/bottom/medal",
+				"style": {
+					"navigationBarTitleText": "勋章"
+				}
+			},
+			{
+				"path": "pages/bottom/report",
+				"style": {
+					"navigationBarTitleText": "报告",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "pages/bottom/pattern",
+				"style": {
+					"navigationBarTitleText": "模式",
+					"backgroundColor": "#f8f8f8"
+				}
+			},
+			{
+				"path": "pages/bottom/setting",
+				"style": {
+					"navigationBarTitleText": "设置"
+				}
+			},
+			{
+				"path": "pages/bottom/fallback",
+				"style": {
+					"navigationBarTitleText": "意见反馈"
+				}
+			}
+		]
+	}
+],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "座上友",
+		"navigationBarBackgroundColor": "#F8F8F8",
+		"backgroundColor": "#ffffff",
+		"enablePullDownRefresh": false,
+		"app-plus": {
+			"background": "#efeff4"
+			// "titleNView": false
+		}
+	},
+	"tabBar": {
+		"color": "#7A7E83",
+		"selectedColor": "#ff8d1a",
+		// "borderStyle": "black",
+		// "backgroundColor": "#ffffff",
+		"list": [
+		   {
+			   "pagePath": "pages/tabbar/find/find",
+			   "text": "发现",
+			   "iconPath": "static/find-off.png",
+			   "selectedIconPath": "static/find-on.png"
+		   },
+		   {
+			   "pagePath": "pages/tabbar/server/server",
+			   "text": "服务",
+			   "iconPath": "static/server-off.png",
+			   "selectedIconPath": "static/server-on.png"
+		   },
+		   {
+		   			"pagePath": "pages/tabbar/index/index",
+		   			"text":  "首页",
+		   			"iconPath": "static/index-off.png",
+		   			"selectedIconPath": "static/index-on.png"
+		   },
+		   {
+			   "pagePath": "pages/tabbar/friend/friend",
+			   "text": "好友",
+			   "iconPath": "static/friend-off.png",
+			   "selectedIconPath": "static/friend-on.png"
+		   },
+		   {
+			   "pagePath": "pages/tabbar/mine/mine",
+			   "text": "个人",
+			   "iconPath": "static/mine-off.png",
+			   "selectedIconPath": "static/mine-on.png"
+		   }
+		]
+	}
+}

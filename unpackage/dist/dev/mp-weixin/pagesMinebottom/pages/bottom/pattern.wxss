@@ -1,0 +1,42 @@
+/* 水平间距 */
+/* 水平间距 */
+.out {
+  width: 100vw;
+  height: 98vh;
+  padding-top: 2vh;
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: "方正楷体简体";
+}
+.out .top {
+  width: 90vw;
+  height: 85rpx;
+  line-height: 90rpx;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  background-color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.out .top .left {
+  margin-left: 30rpx;
+  font-size: 34rpx;
+  font-weight: 400;
+}
+.out .top .right {
+  margin-right: 30rpx;
+}
+.out .text {
+  margin: 0 auto;
+  width: 85vw;
+  font-size: 30rpx;
+  font-weight: 400;
+  color: #a6a6a6;
+  text-align: left;
+  vertical-align: top;
+  padding-bottom: 60rpx;
+}

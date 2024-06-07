@@ -1,0 +1,32 @@
+/* 水平间距 */
+/* 水平间距 */
+.box.data-v-771d8909 {
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 20rpx;
+  margin-bottom: 30rpx;
+  border-radius: 20rpx;
+  box-shadow: #ccc 0px 3px 10px -2px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.box .title.data-v-771d8909 {
+  font-size: 38rpx;
+  font-weight: 600;
+  padding-top: 10px;
+  width: 75%;
+  text-align: center;
+  margin-bottom: 10rpx;
+}
+.box .top.data-v-771d8909 {
+  font-size: 36rpx;
+}
+.box .text.data-v-771d8909 {
+  padding: 10rpx;
+  text-align: center;
+  font-size: 30rpx;
+  text-indent: 2em;
+  letter-spacing: 2rpx;
+}

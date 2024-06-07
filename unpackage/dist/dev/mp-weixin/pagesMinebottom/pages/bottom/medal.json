@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "勋章",
+  "usingComponents": {
+    "life": "../../../components/medal/life",
+    "myself": "../../../components/medal/myself",
+    "uni-segmented-control": "../../../uni_modules/uni-segmented-control/components/uni-segmented-control/uni-segmented-control"
+  }
+}

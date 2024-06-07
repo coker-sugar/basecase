@@ -1,0 +1,106 @@
+.BomOther {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.BomOther .BomText {
+  width: 95vw;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 6rpx solid #fff0df;
+  border-bottom: none;
+  border-radius: 20rpx;
+}
+.BomOther .BomText .name,
+.BomOther .BomText .time {
+  font-weight: normal;
+}
+.BomOther:nth-of-type(9) {
+  border-bottom: 2px solid #fff0df;
+  margin-bottom: 20rpx;
+}
+.rank {
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 900;
+  font-size: 80rpx;
+}
+image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.name .time {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.like {
+  width: 45rpx;
+  height: 45rpx;
+}
+.tail {
+  width: 140rpx;
+  height: 30rpx;
+  font-size: 26rpx;
+  margin: 0 auto;
+  padding-bottom: 20rpx;
+}
+.like-out {
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.BomTextwo {
+  width: 100vw;
+  height: 160rpx;
+  position: fixed;
+  bottom: 0rpx;
+  background-color: #ffdfc0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-bottom: 1px solid #ededee;
+}
+.BomTextwo .anitor {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+  border: 1rpx solid #b0cef0;
+  margin-left: 30rpx;
+}
+.BomTextwo .MiddleText {
+  width: 50%;
+  height: 120rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.BomTextwo .MiddleText .text-top {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.BomTextwo .MiddleText .text-top .name {
+  font-size: 32rpx;
+  font-weight: 600;
+}
+.BomTextwo .MiddleText .text {
+  font-size: 34rpx;
+}
+.BomTextwo .sit {
+  width: 150rpx;
+  font-size: 30rpx;
+  white-space: nowrap;
+  position: relative;
+  right: 60rpx;
+  top: 30rpx;
+}

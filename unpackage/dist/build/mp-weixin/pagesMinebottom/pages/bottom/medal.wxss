@@ -1,0 +1,1 @@
+.outside{margin:0 auto;width:90vw}.outside .icon{width:1px;height:40rpx;background-color:#666;position:absolute;top:32rpx;left:50%;transform:translate(-50%);z-index:999;border-bottom:1px solid #aeb7c1}.outside .top-title{width:90vw;font-size:30px!important;margin-bottom:10rpx}.outside .content{width:100vw}

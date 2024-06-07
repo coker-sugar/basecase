@@ -1,0 +1,1 @@
+<view class="out"><view wx:for="{{a}}" wx:for-item="item" wx:key="d" class=""><view class="top"><view class="left">{{item.a}}</view><view class="right"><switch bindchange="{{b}}" color="#f7b16a" checked="{{c}}" style="zoom:.7"/></view></view><view class="text">{{item.b}}</view></view></view>

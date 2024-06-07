@@ -1,0 +1,73 @@
+/* 水平间距 */
+/* 水平间距 */
+.out {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.out image {
+  width: 100vw;
+  height: 50vh;
+}
+.out .text {
+  position: absolute;
+  top: 35rpx;
+  right: 170rpx;
+  font-family: "方正楷体简体", Tahoma, Geneva, Verdana, sans-serif;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.out .text .healthy, .out .text .report {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.out .text .left {
+  font-size: 60rpx;
+}
+.out .text .healthy .trans {
+  width: 0rpx;
+  height: 0rpx;
+  margin-top: 12rpx;
+  margin-left: 3rpx;
+  border-right: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-bottom: 40rpx solid #fff;
+}
+.out .text .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.out .text .right .en {
+  font-size: 20rpx;
+}
+.out .text .report > .right .en {
+  margin-left: 90rpx;
+}
+.out .text .report > .right .trans {
+  margin-left: 140rpx;
+  width: 0rpx;
+  height: 0rpx;
+  border-right: 10rpx solid transparent;
+  border-left: 10rpx solid transparent;
+  border-top: 40rpx solid #fff;
+}
+.out .top {
+  width: 100vw;
+  height: 35vh;
+  background-image: linear-gradient(to bottom, #c9def8, #61a5f2);
+}
+.out .top image {
+  margin-top: 8vh;
+  height: 30vh;
+}
+.out .bottom {
+  height: 60vh;
+}

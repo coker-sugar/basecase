@@ -1,0 +1,88 @@
+/* 水平间距 */
+/* 水平间距 */
+.content.data-v-321dc10c {
+  width: 100vw;
+}
+.content .TopThree.data-v-321dc10c {
+  width: 95vw;
+  height: 430rpx;
+  margin: 0 auto;
+  padding-top: 55rpx;
+  display: flex;
+  justify-content: space-around;
+}
+.content .TopThree .Top.data-v-321dc10c {
+  width: 30vw;
+  height: 360rpx;
+  display: flex;
+  position: relative;
+  top: 0;
+  left: 0;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  border-top-left-radius: 80rpx;
+  border-top-right-radius: 80rpx;
+  background: linear-gradient(to bottom, #fe9022, #fff);
+}
+.content .TopThree .Top .rank.data-v-321dc10c {
+  position: absolute;
+  top: -40rpx;
+}
+.content .TopThree .Top .anitor.data-v-321dc10c {
+  margin-top: 30rpx;
+}
+.content .TopThree .TopLeft.data-v-321dc10c, .content .TopThree .TopRight.data-v-321dc10c {
+  margin-top: 50rpx;
+  background: linear-gradient(to bottom, #f9c99f, #fff);
+}
+.content .BomOther.data-v-321dc10c {
+  width: 95vw;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.content .BomOther.data-v-321dc10c:last-child {
+  border-bottom: 1px solid #fff0df;
+}
+.content .BomOther .BomText.data-v-321dc10c {
+  width: 95vw;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  border: 6rpx solid #fff0df;
+  border-bottom: none;
+  border-radius: 20rpx;
+}
+.content .BomOther .BomText .name.data-v-321dc10c, .content .BomOther .BomText .time.data-v-321dc10c {
+  font-weight: normal;
+}
+.content .rank.data-v-321dc10c {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 900;
+  font-size: 80rpx;
+}
+.content image.data-v-321dc10c {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.content .name .time.data-v-321dc10c {
+  font-size: 40rpx;
+  font-weight: 700;
+}
+.content .like.data-v-321dc10c {
+  width: 45rpx;
+  height: 45rpx;
+}
+.like-out.data-v-321dc10c {
+  width: 70rpx;
+  height: 70rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
